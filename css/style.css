@@ -105,7 +105,6 @@ body {
 }
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link::before {
-  content: "";
   position: absolute;
   top: 50%;
   left: -2px;
