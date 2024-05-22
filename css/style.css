@@ -534,7 +534,6 @@ a:focus {
 
 .contact_section .contact-form {
   width: 530px; /* Largura do contêiner */
-  height: 300px;
   max-width: 600px; /* Largura máxima do contêiner */
   padding: 25px;
   border-radius: 20px;
@@ -680,7 +679,6 @@ a:focus {
 .footer_section {
   background-color: #232323;
   font-weight: 500;
-  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
