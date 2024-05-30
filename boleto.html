@@ -4,60 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartão</title>
-    <link href="css/cartao.css" rel="stylesheet" />
+    <link href="css/cartaocopy.css" rel="stylesheet" />
     <script src="js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
   
   <div class="checkout-panel">
-    <div class="panel-body" style="border: 4px solid #fec913; border-radius: 15px; position: relative;">
+    <div class="panel-body" style="border: 4px solid #fec913; border-radius: 15px;">
       <h2 class="title">Realize seu Pagamento!</h2>
-      <button class="back-button" onclick="window.location.href='pagamento.html'">X</button>
+   
       
    
       <div class="payment-method">
-        <label for="card" class="method card" style="height: 122px;">
+        <label for="card" class="method card">
           <div class="card-logos">
-            <img src="https://designmodo.com/demo/checkout-panel/img/visa_logo.png" style="display: block; margin: 0 auto;"/>
+            <img src="images/boll.png" style="height: 70px; width: 140px;"/>
           </div>
    
           <div class="radio-input">
             <input id="card" type="radio" name="payment">
-            Pague com Cartão de Crédito
-          </div>
-        </label>
-   
-        <label for="paypal" class="method paypal" style="height: 122px;">
-          <img src="https://designmodo.com/demo/checkout-panel/img/mastercard_logo.png" style="display: block; margin: 0 auto;"/>
-          <div class="radio-input">
-            <input id="paypal" type="radio" name="payment">
-            Pague com Cartão de Dédito
+            Pague com Boleto
           </div>
         </label>
       </div>
-   
+      <br>
       <div class="input-fields">
         <div class="column-1">
-          <label for="cardholder">Titular do Cartão</label>
+          <label for="cardholder">Valor do Boleto</label>
           <input type="text" id="cardholder" />
    
           <div class="small-inputs">
             <div>
-              <label for="date">Data de Expiração</label>
+              <label for="date">Data de Vencimento</label>
               <input type="text" id="date" placeholder="00/0000"/>
             </div>
    
             <div>
-              <label for="verification">CVV / CVC *</label>
+              <label for="verification">CPF/CNPJ do Pagador</label>
               <input type="text" id="verification"/>
             </div>
           </div>
-   
+          
         </div>
         <div class="column-2">
-          <label for="cardnumber">Número do Cartão</label>
+          <label for="cardnumber">Nº do Código de Barras</label>
           <input type="text" id="cardnumber"/>
         </div>
+        
       </div>
       <br>
       <button class="btn">Finalizar Pagamento</button>

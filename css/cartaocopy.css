@@ -119,45 +119,41 @@ body {
 
 .payment-method {
   display: flex;
-  margin-bottom: 60px;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .method {
   display: flex;
   flex-direction: column;
   width: 382px;
-  height: 122px;
-  padding-top: 20px;
+  height: 125px;
   cursor: pointer;
   border: 1px solid transparent;
-  border-radius: 2px;
   border-radius: 20px;
   background-color: rgb(249, 249, 249);
   justify-content: center;
   align-items: center;
 }
-.back-button {
-  font-size: 24px;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  position: absolute;
-  top: 20px; /* Ajustado para 15px */
-  right: 20px; /* Ajustado para 15px */
-}
 
 .card-logos {
   display: flex;
-  width: 150px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.card-logos img {
+  margin: 0 auto;
 }
 
 .radio-input {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Adjusts space between logo and radio input */
 }
+
 
 input[type='radio'] {
   display: inline-block;
@@ -255,4 +251,14 @@ input[type='text']:focus {
 
 .warning {
   border-color: #fec913;
+}
+.back-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 20px; /* Ajustado para 15px */
+  right: 20px; /* Ajustado para 15px */
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão</title>
+    <link href="css/pagamento.css" rel="stylesheet" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+  
+  <div class="checkout-panel">
+    <div class="panel-body" style="border: 4px solid #fec913; border-radius: 15px; position: relative;">
+      <!-- Botão "X" -->
+      <button class="back-button" onclick="window.location.href='mensalidades.html'">X</button>
+      
+      <h2 class="title">Formas de Pagamento</h2>
+      <h4>Escolha a Forma de Pagamento:</h4>
+   
+      <div class="payment-method">
+        <label for="card" class="method card" style="height: 122px;">
+          <div class="card-logos">
+            <a href="cartao.html"><img src="images/cartoes.png" style="width: 80px; "/></a>
+          </div>
+            
+        </label>
+   
+        <label for="paypal" class="method paypal" style="height: 122px;">
+          <a href="pix.html"><img src="images/logopix.png" style="width: 80px; display: block; margin: 0 auto;"/></a>
+            
+        </label>
+        <label for="paypal" class="method paypal" style="height: 122px;">
+          <a href="boleto.htm"><img src="images/boll.png" style="width: 80px; display: block; margin: 0 auto;"/></a>
+            
+        </label>
+      </div>
+   
+      <div class="input-fields">
+        <div class="column-1">
+          <label for="cardholder">Informe o quanto você poderá pagar:</label> 
+          <input type="text" id="cardholder" placeholder="Informe o valor" />
+        </div>
+      </div>
+      <br>
+      <br>
+      <button class="btn">Continuar Pagamento</button>
+    </div>
+  </div>
+  <script src="js/cartao.js"></script>  
+</body>
+</html>
