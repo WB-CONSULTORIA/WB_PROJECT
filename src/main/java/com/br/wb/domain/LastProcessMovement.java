@@ -2,7 +2,6 @@ package com.br.wb.domain;
 
 import com.br.wb.domain.proceeding.Movement;
 import com.br.wb.domain.proceeding.Proceeding;
-import com.br.wb.dto.proceedings.ProceedingInfo;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;

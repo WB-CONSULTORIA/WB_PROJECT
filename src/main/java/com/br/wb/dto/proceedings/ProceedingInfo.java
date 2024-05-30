@@ -13,5 +13,5 @@ import java.util.List;
 public record ProceedingInfo(String numeroProcesso,
                              String tribunal,
                              List<MovementsDTO> movimentos,
-                             Date dataHora) {
+                             String dataHora) {
 }

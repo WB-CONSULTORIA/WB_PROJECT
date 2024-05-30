@@ -7,7 +7,7 @@ import java.util.Date;
 
 public record LastProcessMovementDTO(Movement movimentoMaisRecente,
                                      ProceedingInfo allMoves,
-                                     Date dataHoraUltimaAtualizacao
+                                     String dataHoraUltimaAtualizacao
 
                                      ) {
 

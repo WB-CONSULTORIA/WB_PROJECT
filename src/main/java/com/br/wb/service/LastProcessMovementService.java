@@ -1,7 +1,6 @@
 package com.br.wb.service;
 
 import com.br.wb.domain.LastProcessMovement;
-import com.br.wb.dto.proceedings.mapper.DeserializeJsonMapper;
 import com.br.wb.respositories.LastProcessMovementRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -17,7 +16,6 @@ public class LastProcessMovementService {
 
     private final LastProcessMovementRepository lastProcessMovementRepository;
     private final DataJudConnectionService dataJudConnectionService;
-    private final DeserializeJsonMapper jsonMapper;
 
 
     public LastProcessMovement save(LastProcessMovement lastMove){
