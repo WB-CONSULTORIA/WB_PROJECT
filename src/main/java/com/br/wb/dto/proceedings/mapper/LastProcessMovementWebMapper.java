@@ -19,7 +19,7 @@ public interface LastProcessMovementWebMapper {
     MovementsDTO mapToDto(Movement movement);
 
 
-
+//mapeia o processo
     default Proceeding mapToProceeding(LastProcessMovement dto) {
         return Proceeding.builder()
                 .numeroProcesso(dto.getInformations().getNumeroProcesso())
