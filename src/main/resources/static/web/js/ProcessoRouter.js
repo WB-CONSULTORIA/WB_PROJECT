@@ -40,7 +40,7 @@ function Redirect(data,method) {
         break;
     }
 
-        fetch(`http://localhost:8080/processos${id}`, requestOptions)
+        fetch(`https://wb-backend-48ug.onrender.com/processos${id}`, requestOptions)
             .then((response) => response.text())
             .then((result) => console.log(result))
             .catch((error) => console.error(error));

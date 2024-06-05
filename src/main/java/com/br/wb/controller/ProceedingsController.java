@@ -27,7 +27,7 @@ import lombok.var;
 public class ProceedingsController {
     private final DataJudConnectionService dataJudConnectionService;
     private final LastProcessMovementService lastProcessMovementService;
-    private LastProcessMovementWebMapper lastProcessMovementWebMapper;
+    private final LastProcessMovementWebMapper lastProcessMovementWebMapper;
 
     @PostMapping
     public List<LastProcessMovement> BuscarPorNumero(@RequestBody String numeroProcesso) throws IOException {
