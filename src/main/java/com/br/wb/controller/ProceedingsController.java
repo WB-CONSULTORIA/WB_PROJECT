@@ -1,18 +1,25 @@
 package com.br.wb.controller;
 
-import com.br.wb.domain.LastProcessMovement;
-import com.br.wb.dto.proceedings.LastProcessMovementDTO;
-import com.br.wb.dto.proceedings.mapper.LastProcessMovementWebMapper;
-import com.br.wb.service.LastProcessMovementService;
-import com.br.wb.service.DataJudConnectionService;
-import lombok.*;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.br.wb.domain.LastProcessMovement;
+import com.br.wb.dto.proceedings.LastProcessMovementDTO;
+import com.br.wb.dto.proceedings.mapper.LastProcessMovementWebMapper;
+import com.br.wb.service.DataJudConnectionService;
+import com.br.wb.service.LastProcessMovementService;
+
+import lombok.RequiredArgsConstructor;
+import lombok.var;
 
 @RestController
 @RequiredArgsConstructor
